@@ -1,0 +1,49 @@
+#include <iostream>
+#include "Practices.h"
+
+using namespace std;
+
+int main()
+{
+    setlocale(0, "");
+    int snachala;
+    while (true) {
+        int vvod;
+    Menu: {
+        cout << "Выберете номер практической работы: \n"
+            "1. ТИПЫ ДАННЫХ И ИХ ВНУТРЕННЕЕ ПРЕДСТАВЛЕНИЕ В ПАМЯТИ\n"
+            "2. ОДНОМЕРНЫЕ СТАТИЧЕСКИЕ МАССИВЫ\n"
+            "3. ДВУМЕРНЫЕ СТАТИЧЕСКИЕ МАССИВЫ. УКАЗАТЕЛИ\n"
+            "4. Текстовые строки как массивы символов\n";
+        cin >> vvod;
+        }
+    switch (vvod) {
+    case 1: {
+        system("cls");
+        practice1();
+        system("pause");
+    }
+    case 2: {
+        system("cls");
+        practice2();
+        system("pause");
+    }
+    case 3: {
+        system("cls");
+        practice3();
+        system("pause");
+    }
+    case 4: {
+        system("cls");
+        practice4();
+        system("pause");
+    }
+    }
+    cout << "\n\nХотите продолжить? Если Да, введите: '0'" << endl;
+    cin >> snachala;
+    if (snachala != 0)
+        break;
+
+    }
+
+}
